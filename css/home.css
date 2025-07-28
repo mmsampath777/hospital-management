@@ -1,0 +1,263 @@
+body {
+  margin: 0;
+  font-family: 'Quicksand', sans-serif;
+  background-color: #f5f8ff;
+  color: #333;
+}
+
+#splash-screen {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      width: 100vw;
+      height: 100vh;
+      background: linear-gradient(135deg, #f5fffa, #e0f7fa);
+      z-index: 1000;
+      position: fixed;
+      top: 0;
+      left: 0;
+      animation: fadeout 1s ease 2.5s forwards;
+    }
+
+    .splash video {
+      width: 280px;
+      border-radius: 12px;
+      box-shadow: 0 0 40px #B2EBF2;
+      background-color: transparent;
+      object-fit: cover;
+    }
+
+    .sub {
+      margin-top: 20px;
+      font-size: 32px;
+      color: #4DD0E1;
+      font-weight: bold;
+      letter-spacing: 1px;
+      animation: zoom 1.5s ease-in-out infinite alternate;
+    }
+
+    @keyframes zoom {
+      from {
+        transform: scale(1);
+      }
+      to {
+        transform: scale(1.08);
+      }
+    }
+
+    @keyframes fadeout {
+      to {
+        opacity: 0;
+        visibility: hidden;
+      }
+    }
+
+    .main {
+      display: none;
+     
+      text-align: center;
+      animation: fadein 1.2s ease forwards;
+    }
+
+    @keyframes fadein {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    h1 {
+      font-size: 40px;
+      color: #2d3436;
+    }
+
+    p {
+      font-size: 18px;
+      color: #636e72;
+      max-width: 600px;
+      margin: 10px auto;
+    }
+
+.navigation {
+  background-color: #4DD0E1;
+  padding: 15px;
+  text-align: center;
+}
+
+.nav-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  
+}
+
+.nav-item {
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: color 0.3s;
+  position: relative;
+}
+
+.nav-item::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 2px;
+  width: 0%;
+  background-color: #4DD0E1;
+  transition: width 0.4s ease-out;
+}
+.nav-item:hover::after
+{
+  background-color: white;
+  width: 100%;
+}
+.hero {
+  text-align: center;
+  margin-top: 40px;
+}
+
+.slider {
+  position: relative;
+  max-width: 600px;
+  margin: 40px auto;
+  box-shadow: 0 0 15px rgba(0,0,0,0.1);
+}
+
+.slider img {
+  max-width: 300%;
+  height: auto;
+  border-radius: 12px;
+}
+
+.slider-controls {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  transform: translateY(-50%);
+}
+
+.slider-controls button {
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 50%;
+}
+
+.features {
+  display: flex;
+  justify-content: space-around;
+  margin: 40px 0;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.search-container
+{
+  display: flex;
+  justify-content: center;
+}
+.feature-box {
+  flex: 1 1 30%;
+  background-color: white;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+.feature-box h3 {
+  color: #4DD0E1;
+}
+
+.fadein {
+  animation: fadein 1s ease-in;
+}
+
+@keyframes fadein {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+.outcaro
+{
+
+  padding: 5px;
+  
+}
+
+.caro
+{
+  width: 1510px;
+  height: 600px;
+  object-fit: cover;
+  border-radius: 3px;
+ 
+}
+
+.carousel-caption
+{
+   background-color: #E0F7FA;
+   color: #4DD0E1;
+   width: auto;
+   border-radius: 10px;
+   font-weight: 600;
+
+}
+.carousel-caption>h5{
+  color: #26C6DA;
+  font-weight: 700;
+}
+
+.search
+{
+   display: flex;
+   width: 700px;
+   height: 50px;
+   border-radius: 12px;
+   padding: 10px;
+   outline-style: none;
+   border: none;
+   box-shadow: 2px 2px 12px  #26C6DA ;
+   margin-top: 10px;
+  
+}
+.search::placeholder
+{
+  color: black;
+  font-family: 'Quicksand', sans-serif;
+  margin-left: 3px;
+}
+.dropdown {
+      position: absolute;
+      top: 100%;
+      width: 1000px;
+      background-color: #fff;
+      border: 1px solid #ddd;
+      border-top: none;
+      max-height: 200px;
+      overflow-y: auto;
+      z-index: 10;
+      box-shadow: 0px 4px 8px rgba(0,0,0,0.1);
+    }
+
+    .dropdown div {
+      padding: 10px;
+      cursor: pointer;
+    }
+
+    .dropdown div:hover {
+      background-color: #f0f0f0;
+    }

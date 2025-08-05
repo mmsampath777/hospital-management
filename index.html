@@ -32,7 +32,7 @@
     />
   <!-- Google Font -->
   <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500;700&display=swap" rel="stylesheet">
-  <link href="../css/home.css" rel="stylesheet">
+  <link href="./css/home.css" rel="stylesheet">
   <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
 
 </head>
@@ -42,7 +42,7 @@
   <div id="splash-screen">
     <div class="splash">
       <video autoplay muted playsinline id="splash-video">
-        <source src="../media/splash.mp4" type="video/mp4" />
+        <source src="./media/splash.mp4" type="video/mp4" />
         Your browser does not support the video tag.
       </video>
     </div>
@@ -64,21 +64,21 @@
       <div id="imageCarousel" class="carousel slide carousel-fade " data-bs-ride="carousel">
         <div class="carousel-inner outcaro" >
           <div class="carousel-item active" data-bs-interval="2000">
-            <img src="../media/book.jpg" class="d-block w-100 caro" alt="First slide">
+            <img src="./media/book.jpg" class="d-block w-100 caro" alt="First slide">
             <div class="carousel-caption d-none d-md-block carousel-caption-animate">
               <h5>Book Appointments Seamlessly</h5>
               <p>Choose your preferred doctor, select an available time slot, and book your appointment instantly — all from the comfort of your home.</p>
             </div>
           </div>
           <div class="carousel-item" data-bs-interval="2000">
-            <img src="../media/doctor.jpg" class="d-block w-100 caro" alt="Second slide">
+            <img src="./media/doctor.jpg" class="d-block w-100 caro" alt="Second slide">
             <div class="carousel-caption d-none d-md-block carousel-caption-animate">
               <h5>Find Nearby Hospitals Instantly</h5>
               <p> Use real-time location data to discover hospitals closest to you, along with directions, emergency contacts, and available services.</p>
             </div>
           </div>
           <div class="carousel-item" data-bs-interval="2000">
-            <img src="../media/hospital.jpg" class="d-block w-100 caro" alt="Third slide">
+            <img src="./media/hospital.jpg" class="d-block w-100 caro" alt="Third slide">
             <div class="carousel-caption d-none d-md-block carousel-caption-animate">
               <h5 >Consult the Right Specialist</h5>
               <p>Browse doctors by specialty — from cardiologists to dermatologists. Filter by availability, reviews, and hospital affiliation.</p>
@@ -121,8 +121,57 @@
       </div>
     </section>
   </div>
- <script src="../js/searchHospital.js"></script>
-  <script src="../js/slider.js"></script>
-  <script src="../js/splash.js"></script>
+  <h1 style="text-align: center;color:#26C6DA;">Top Rated hospital with Patient review</h1>
+  <div class="cards">
+    
+    <div class="card-inner">
+      <img src="./media/apollo.jpg" alt="Apollo Hospital" >
+      <p>Great treatment at Apollo Hospital, Madurai. Thanks to Apollo & Bajaj Finserv for the helpful zero-interest EMI option!</p>
+    </div>
+    <div class="card-inner">
+      <img src="./media/preethi-superspeciality.jpg" alt="Preethi Superspeciality hospital">
+      
+      <p>Doctors are caring, hospital is clean, has all facilities & diet food. Got clear info & great care during my surgery. Highly satisfied!</p>
+    </div>
+      <div class="card-inner">
+      <img src="./media/vadamalayam.jpg" alt="Vadamalayam Hospital">
+      <p>Best hospitality! No worries about money. My family got great treatment, care, service & food. Truly a comforting experience!</p>
+    </div>
+      <div class="aboutus">
+      <div>
+        <p class="abouthead">About US</p>
+        <img src="./media/about.jpg" class="aboutimg"> 
+      </div>
+      <div class="aboutcontent"><p>MediConnect is a smart and user-friendly healthcare platform designed to bridge the gap between patients and medical services. Our mission is to simplify healthcare access by enabling users to search for hospitals, book appointments, and connect with doctors seamlessly from anywhere. We envision a future where healthcare is not just accessible, but also efficient and transparent — empowering individuals to make informed decisions with ease. MediConnect aims to enhance the patient experience by offering real-time information, smooth navigation, and personalized services, all in one place.</p></div>
+    </div>
+  </div>
+  </div>
+  <footer id="footer">
+    <div class="footout">
+    <div class="footcol">
+      <p>Book appointment</p>
+      <p>Find hospital</p>
+      <p>About US</p>
+      <p>Contact</p>
+    </div>
+    <div class="footcol">
+      <p>Email</p>
+      <p>24/7 support</p>
+      <p>a</p>
+      <p>b</p>
+
+    </div>
+    <div class="footcol">
+       <p>a</p>
+      <p>s</p>
+      <p>p</p>
+      <p>h</p>
+    </div>
+    </div>
+    <p style="text-align: center;color: white;">&copy Copyright Mediconnect</p>
+  </footer>
+ <script src="./js/searchHospital.js"></script>
+  <script src="./js/slider.js"></script>
+  <script src="./js/splash.js"></script>
 </body>
 </html>

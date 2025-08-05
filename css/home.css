@@ -56,7 +56,7 @@ body {
     .main {
       display: none;
      
-      text-align: center;
+      
       animation: fadein 1.2s ease forwards;
     }
 
@@ -260,4 +260,109 @@ body {
 
     .dropdown div:hover {
       background-color: #f0f0f0;
+    }
+    .footout{
+      display: flex;
+      justify-content: space-around;
+      color: white;
+    }
+    footer
+    {
+   background-color: #4DD0E1;
+   font-weight: 600;
+    display: none;
+      animation: fadein 1.2s ease forwards;
+    }
+    .footcol
+    {
+      color: white;
+      
+    }
+    .cards
+    {
+      padding-top: 10px;
+      display: flex;
+      justify-content: space-around;
+      width: fit-content;
+      height: fit-content;
+      background-color: #f5f8ff;
+      color: black;
+      flex-wrap: wrap;
+      align-items: first baseline;
+      margin-bottom: 40px;
+
+    }
+    .cards > h1
+    {
+        color: #26C6DA;
+        font-weight: 700;
+    }
+    .card-inner
+    {
+      padding: 15px;
+      box-shadow: 5px 5px 5px rgba(182, 181, 181, 0.5);
+      border-radius: 8px;
+      width: 400px;
+      height: fit-content;
+     transition: 1s ease-in-out;
+     align-items: center;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+    justify-content: baseline;
+    
+    }
+    .card-inner>img
+    {
+      width: 300px;
+      height: 300px;
+      object-fit: cover;
+      padding: 5px;
+      border: 10px solid #B2EBF2;
+
+    }
+  
+    .card-inner > p
+    {
+      font-size: 15px;
+      padding: 3px;
+      text-align: center;
+
+    }
+    .card-inner:hover
+    {
+       box-shadow: 7px 7px 20px rgba(131, 130, 130, 0.5);
+    }
+    .aboutus
+    {
+      margin-top: 240px;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      box-shadow: 5px 5px 5px rgba(182, 181, 181, 0.5);
+      transition: 0.3s ease-out;
+      padding: 30px;
+      background-color: #f5f8ff;
+      margin: 10px;
+      width: 100%;
+      flex-wrap: wrap;
+    }
+    .aboutimg
+    {
+       width: 500px;
+       height: 300px;
+       border-radius: 8px;
+       object-fit: contain;
+       
+    }
+    .aboutus:hover
+    {
+       box-shadow: 8px 8px 20px rgba(131, 130, 130, 0.5);
+    }
+    .abouthead
+    {
+      text-align: center;
+      font-weight: 700;
+      font-size: x-large;
+       color: #4DD0E1;
     }
